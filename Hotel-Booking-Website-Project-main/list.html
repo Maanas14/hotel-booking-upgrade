@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!-- additional links are imported here -->
+  <!-- head part -->
+    <link rel="stylesheet" type="text/css" href="./styles/common.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/list.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+  <!--main body div -->
+    <header>      <!-- header part -->
+            <div>
+                <!--Image logo-->
+                <img src="./assests/images/logo.png" class="logo" alt="logo">
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right; margin-right: 2%; margin-top: 1.5%; background-color: white;color: black;">Login</button>
+            </div>
+          
+            <div id="id01" class="modal">    <!-- login container-->
+  
+                <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+                  <div>
+                      <h2 style="font-style: italic;">
+                          Please Login
+                      </h2>
+                  </div>
+              
+                  <div class="cont">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required><br>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required><br>
+                      
+                    <button type="submit">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+              
+                  <div class="cont" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+                </form>
+              </div>
+            
+
+            </header>
+<div class="body"> 
+        <div class="hotel-container"> 
+           
+            <div  class="list">
+            <a href="#h1" style="color: black;text-decoration: none;"><button type="button" class="btn-sm btn-info">List View</button></a>
+            <a href="#m1" style="color: black;text-decoration: none;" class="mapView"><button type="button" class="btn-sm btn-info">Map View</button></a>
+            <a href="./detail.html">
+            </div>
+                 
+       <div class="hotel-images">
+            <!-- div for 1st hotel details-->
+            <a href="./detail.html">
+           <div class="Hotel1" id="h1">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" class="himage">
+            <div>
+            <h4 style="margin-left: 5%; color: black;">Radisson Blu Hotel</h4>
+           <div style="margin-left: 5% ;">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+           </div>
+            <h5 style="margin-left: 5%;color: black;">New Delhi</h5>
+        </div>
+            </div>
+
+            </a>
+            <a>
+             
+             <div class="Hotel2">
+                 <!-- div for 2nd hotel details-->
+
+                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" class="himage">
+
+                 <div>
+                 <h3 style="margin-left: 5%;">The Lalit New Delhi</h3>
+                <div style="margin-left: 5% ;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                </div>
+                 <h5 style="margin-left: 5%;">New Delhi</h5>
+                </div>
+             </div>
+            </a>
+     <a>
+            <div class="Hotel3">
+               
+            <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg " class="himage">
+              <div style="text-align: center;">
+            <h3 style="margin-left: 5%;text-decoration: none;">Taj Palace</h3>
+               
+              <div style="margin-left: 5% ;">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </div>
+               <h5 style="margin-left: 5%;"> New Delhi</h5>
+            </div>
+            </div>
+        </div>
+    </a>
+   </div>      
+               <div class="map" >
+                   <!-- div for map view -->
+                   <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" id="m1"><br>
+                 
+                </div>
+</div>
+
+
+<footer>
+
+    <div>
+        
+
+        <div  >
+            <!--Contact us for contact details-->
+            <!--Contact us redirects us to contact.html-->
+            <button onclick="document.getElementById('id02').style.display='block'" style="margin-right: 5%; background-color: rgb(11, 93, 216); color: white;">Contact Us</button>
+          </div>
+        
+        
+         <a href="https://twitter.com"target="_blank"><img src="./assests/images/twitter.png"  class="footer"></a>
+         <a href="https://www.instagram.com"target="_blank"><img src="./assests/images/instagram.png" class="footer" ></a>
+         <a href="https://www.facebook.com"target="_blank"><img src="./assests/images/facebook.png" class="footer"></a>
+        
+         <p class="copy">Ⓒ 2020 ROOM SEARCH PVT.LTD.</p>
+    </div>
+    <div id="id02" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post" style="max-width: 50%;">
+            <div class="modal-content">
+                <button type="button" style="float: right;" class="close">&times;</button>
+            <div>
+              <h3 style="font-style: italic;">
+                  Get in touch ----
+              </h3>
+              <h5>
+                  Thankyou for reaching out!!!!
+              </h5>
+              <h5>
+                  Please enter your email and we will get back to you soon .......
+              </h5>
+          </div>
+      
+          <div class="cont">
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter your email id" name="email" required><br>
+              
+            <button type="submit" style="float: right;">Submit</button>
+          </div>
+      
+          <div class="cont" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+          
+        </form>
+    </div>
+
+</footer>
+</body>
+</html>
